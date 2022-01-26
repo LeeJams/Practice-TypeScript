@@ -15,3 +15,21 @@ enum ShoesStr {
 
 var myShoesStr = ShoesStr.Nike;
 console.log(myShoesStr); // 나이키
+
+// 예제
+enum Answer {
+  Yes = 'Y',
+  No = 'N'
+}
+
+function askQuestion(answer: Answer) {
+  if(answer === Answer.Yes) {
+    console.log('정답')
+  }
+  if(answer === Answer.No){
+    console.log('오답')
+  }
+}
+
+askQuestion('Y');
+askQuestion(Answer.Yes);
